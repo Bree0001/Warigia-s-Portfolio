@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* root styles */
+:root {
+  --black-bg: #1a1c19;
+  --white-bg: #fff;
+  --header-bg: #3c3a39;
+  --primary-text: #ff6b00;
+  --supporting-text: #fff5e1;
+  --crete: "Crete Round", serif;
+  --poppins: "Poppins", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --inter: "Inter", sans-serif;
+}
+
+/* reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* typography */
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  background: var(--header-bg);
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-bg);
+  font-family: var(--roboto);
+  width: 100%;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  right: 20px;
+}
+
+.menu-icon span {
+  width: 2rem;
+  height: 2px;
+  background: var(--white-bg);
+}
+
+.headline-container {
+  display: flex;
+  height: 100vh;
+  max-width: 100%;
+  background: var(--black-bg);
+  color: var(--white-bg);
+}
+
+.illustration {
+  height: 100%;
+  background-image: url("./assets/images/illustration-header.png");
+  background-size: contain;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+}
+
+.text-icons-container {
+  display: flex;
+  padding: 0 10%;
+  margin-top: 20%;
+  line-height: 1.25;
+  gap: 1rem;
+}
+
+.headline-text h1 {
+  font-family: var(--crete);
+  color: var(--primary-text);
+  margin-bottom: 0;
+}
+
+.headline-text h2 {
+  font-family: var(--roboto);
+  color: var(--supporting-text);
+  font-weight: 500;
+}
+
+.headline-text p {
+  font-family: var(--poppins);
+  color: var(--white-bg);
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.headline-icons {
+  display: flex;
+}
+
+/* Works Section */
+.works-header {
+  width: 100%;
+  display: flex;
+}
+
+.works-header h2 {
+  font-size: 4rem;
+  font-family: var(--crete);
+  font-weight: lighter;
+  opacity: 0.7;
+}
+
+.heading-line {
+  background-color: var(--black-bg);
+  width: 90%;
+  height: 1px;
+  margin-bottom: 3%;
+}
+
+.cards {
+  display: grid;
+}
+
+.card-1 {
+  display: flex;
+}
+
+.card-1 img {
+  width: 90%;
+}
+
+.card-1 h2 {
+  margin: 4% 3%;
+  font-size: 3rem;
+  font-family: var(--crete);
+  font-weight: lighter;
+}
+
+.card-1 p {
+  font-family: var(--inter);
+  line-height: 2.3rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-left: 3%;
+}
+
+.card-1-button {
+  background-color: var(--primary-text);
+  color: var(--white-bg);
+  font-family: var(--inter);
+  font-size: 400;
+  padding: 1.3rem 2rem;
+  border: none;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  width: fit-content;
+}
+
+.card-2 {
+  width: 100%;
+  display: flex;
+}
+
+.card-2 h2 {
+  font-family: var(--crete);
+  color: var(--white-bg);
+  font-size: 3.1rem;
+  margin-left: 3%;
+  font-weight: lighter;
+}
+
+.card-2 p {
+  font-size: 1.6rem;
+  font-family: var(--inter);
+  font-weight: 400;
+  margin-left: 3%;
+}
+
+.about-container {
+  position: relative;
+}
+
+.about-me-section {
+  background-color: var(--black-bg);
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding-top: 30%;
+}
+
+.about-me-section h2 {
+  font-family: var(--crete);
+  color: var(--primary-text);
+  font-size: 7.6rem;
+  font-weight: 400;
+}
+
+.about-text {
+  padding-left: 8%;
+}
+
+.about-me-section p {
+  font-family: var(--inter);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white-bg);
+  width: 80%;
+  margin-top: 2rem;
+  line-height: 2.4rem;
+}
+
+.about-button {
+  background-color: var(--primary-text);
+  color: var(--white-bg);
+  font-family: var(--inter);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.3rem 2rem;
+  border: none;
+  margin-top: 2rem;
+}
+
+.lining {
+  width: 80%;
+  height: 1px;
+  background: var(--white-bg);
+  position: absolute;
+  bottom: 0;
+}
+
+.languages-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.languages-icons {
+  margin-right: 1rem;
+}
+
+/* mobile */
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  header {
+    overflow-x: hidden;
+    padding: 4rem 2.6rem;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .illustration {
+    bottom: -27%;
+    background-size: 90%;
+    background-position: 510%;
+  }
+
+  .text-icons-container {
+    flex-direction: column;
+    margin-top: 55%;
+  }
+
+  .headline-text h1 {
+    font-size: 5.6rem;
+  }
+
+  .headline-text h2 {
+    font-size: 2.4rem;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  .headline-text p {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .headline-icons {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headline-icons img {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .works-about-section {
+    padding: 10rem 5% 5rem;
+  }
+
+  .works-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading-line {
+    background-color: gray;
+    height: 1px;
+    margin-top: 10%;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-1 img {
+    margin-top: 19%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .unordered-list {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1rem;
+    margin-top: 1.3rem;
+  }
+
+  .unordered-list li {
+    background: #ffffff37;
+    padding: 1rem 1.2rem;
+    border: 0.2px solid black;
+    font-size: 1.6rem;
+  }
+
+  .card-2 {
+    margin-top: 2rem;
+    width: 100%;
+    background:
+      linear-gradient(
+        180.45deg,
+        rgba(38, 38, 38, 0) 0.75%,
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
+      url(assets/images/card-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: var(--white-bg);
+  }
+
+  .card-info {
+    margin-top: 6.2rem;
+  }
+
+  .card-2 p {
+    margin-top: 1.5rem;
+  }
+
+  .big-button {
+    background-color: var(--primary-text);
+    color: var(--white-bg);
+    font-family: var(--inter);
+    font-size: 400;
+    padding: 1.3rem 2rem;
+    border: 0;
+    width: 100%;
+  }
+
+  .about-me-section {
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .about-me-section h2 {
+    text-align: center;
+  }
+
+  .illustration2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .illustration2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .empty {
+    background-color: var(--black-bg);
+    width: 100%;
+    height: 3rem;
+  }
+
+  .last-section {
+    background-color: var(--black-bg);
+    padding: 2rem;
+  }
+
+  .languages-container {
+    margin-top: 9rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .languages {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .languages h3 {
+    color: var(--white-bg);
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .languages ul li {
+    list-style-type: none;
+    color: var(--white-bg);
+    padding: 1.5rem;
+    font-size: 2rem;
+  }
+}
