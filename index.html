@@ -255,18 +255,52 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="contact-form">
       <div class="contact-info">
         <p>
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
+          I'm always <br />
+          interested in hearing <br />
+          about new projects,<br />
+          so if you'd like to <br />
+          chat please get in touch.
         </p>
       </div>
       <div class="input-section">
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <button>Get in touch</button>
+        <form action="https://formspree.io/f/xnnjzaqp">
+          <input
+            type="text"
+            id="name"
+            placeholder="Full name"
+            name="name"
+            maxlength="30"
+            required
+          />
+        </form>
+        <hr class="horizontal-rule" />
+        <form action="https://formspree.io/f/xnnjzaqp">
+          <input
+            type="email"
+            placeholder="Email address"
+            name="email"
+            required
+          />
+        </form>
+
+        <hr class="horizontal-rule" />
+
+        <div class="message-input">
+          <form action="https://formspree.io/f/xnnjzaqp">
+            <input
+              class="input-text-area"
+              type="text"
+              name="message"
+              placeholder="Write me something..."
+              maxlength="500"
+              required
+            />
+          </form>
+        </div>
+        <button class="get-in-touch-button">Get in touch</button>
       </div>
     </section>
   </body>
