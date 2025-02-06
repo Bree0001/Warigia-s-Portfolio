@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio Example <a name="about-project"></a>
+# 📖 Warigia's POrtforlio <a name="about-project"></a>
 
-**Portfolio Example** is a project aim to help Brendah Warigia who's my mentee better understand the params of the current project she's doing.
+**Warigia's POrtforlio** is a project aim to help Brendah Warigia who's my mentee better understand the params of the current project she's doing.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -93,10 +93,10 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/shaqdeff/portfolio-example-bree.git
+  git clone git@github.com:Bree0001/Warigia-s-Portfolio.git
 ```
 
-You can also download this project as a ZIP file by [clicking here](https://github.com/shaqdeff/portfolio-example-bree/archive/refs/heads/main.zip).
+You can also download this project as a ZIP file by [clicking here](git@github.com:Bree0001/Warigia-s-Portfolio.git).
 
 Get into the cloned repository which should be in your local:
 
@@ -155,7 +155,6 @@ If you like this project please give it a star.
 I would like to thank my mentors:
 
 - GitHub: [Shaquille Ndunda](https://github.com/shaqdeff)
-- GitHub: [Grace Muthui](https://github.com/Graycemuthui)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
