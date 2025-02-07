@@ -31,9 +31,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Warigia's POrtforlio <a name="about-project"></a>
+# 📖 Warigia's Portforlio <a name="about-project"></a>
 
-**Warigia's POrtforlio** is a project aim to help Brendah Warigia who's my mentee better understand the params of the current project she's doing.
+**Warigia's POrtforlio** is my first project using the Microverse curriculum. Its aim is to help me better grasp HTML and CSS concepts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
