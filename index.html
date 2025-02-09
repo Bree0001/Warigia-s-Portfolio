@@ -255,7 +255,67 @@
         </div>
       </div>
     </section>
-  </body>
-</html>
+    <section class="contact-form">
+      <div class="contact-info">
+        <p>
+          I'm always <br />
+          interested in hearing <br />
+          about new projects,<br />
+          so if you'd like to <br />
+          chat please get in touch.
+        </p>
+      </div>
+      <div class="input-section">
+        <form action="https://formspree.io/f/xnnjzaqp" method="post">
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Full name"
+            name="name"
+            minlength="2"
+            pattern="[A-Za-z\s]+"
+            title="Please enter a valid name (letters and spaces only)"
+            required
+          />
+          <hr class="horizontal-rule" />
+          <input
+            type="email"
+            placeholder="Email address"
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="Please enter a valid email address"
+            required
+          />
+          <hr class="horizontal-rule" />
+          <div class="message-input">
+            <textarea 
+              name="message"
+              placeholder="Write me something..."
+              maxlength="500"
+              minlength="10"
+              title="Message must be between 10 and 500 characters"
+              required></textarea>
+          </div>
+          <div class="button-div">
+          <button type="submit" class="get-in-touch-button">
+            Get in touch
+          </button>
+          </div>
+       </form>
+      </div>
+      <footer>
+      <div class="footer-line"></div>
+      <div class="div-footer-icons">
+        <article class="footer-icons">
+          <img src="./assets/icons/github.png" alt="github" />
+          <img src="./assets/icons/linkedin.png" alt="linkedin" />
+          <img src="./assets/icons/peace.png" alt="peace" />
+          <img src="./assets/icons/twitter.png" alt="twitter" />
+          <img src="./assets/icons/medium.png" alt="medium" />
+        </article>
+      </div>
+      </footer>
+    </section>
   </body>
 </html>

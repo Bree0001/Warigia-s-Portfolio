@@ -12,6 +12,7 @@
   --poppins: "Poppins", sans-serif;
   --roboto: "Roboto", sans-serif;
   --inter: "Inter", sans-serif;
+  --input-text: grey;
 }
 
 /* reset styles */
@@ -217,6 +218,8 @@ header {
   margin-left: 3%;
 }
 
+/* About Me Section */
+
 .about-container {
   position: relative;
 }
@@ -278,7 +281,90 @@ header {
   margin-right: 1rem;
 }
 
+/* Contact Section */
+
+.contact-form p {
+  font-family: var(--inter);
+  font-size: 3.2rem;
+  color: #172b4d;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
+.contact-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 2rem;
+}
+
+form input {
+  padding-top: 1.8rem;
+}
+
+.input-section {
+  margin-top: 4rem;
+}
+
+.input-section input::placeholder {
+  font-size: 1.7rem;
+  color: var(--input-text);
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  text-align: left;
+  line-height: 1.2;
+  background-color: #fbf8f7;
+  border: none;
+}
+
+textarea::placeholder {
+  font-style: italic;
+  font-size: 1.7rem;
+  color: var(--black-bg);
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-in-touch-button {
+  background-color: var(--primary-text);
+  color: var(--white-bg);
+  font-family: var(--inter);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.3rem 2rem;
+  border: none;
+  margin-top: 2rem;
+}
+
+.footer-line {
+  margin-top: 25%;
+  width: 100%;
+  height: 1px;
+  border: 0.5px solid gray;
+}
+
+.div-footer-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icons img {
+  color: #172b4d;
+}
+
 /* mobile */
+
 @media screen and (min-width: 375px) and (max-width: 768px) {
   header {
     overflow-x: hidden;
@@ -430,12 +516,6 @@ header {
     object-fit: cover;
   }
 
-  .empty {
-    background-color: var(--black-bg);
-    width: 100%;
-    height: 3rem;
-  }
-
   .last-section {
     background-color: var(--black-bg);
     padding: 2rem;
@@ -468,5 +548,31 @@ header {
     color: var(--white-bg);
     padding: 1.5rem;
     font-size: 2rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-form p {
+    padding-top: 4rem;
+  }
+
+  .input-section input {
+    border: none;
+    width: 100%;
+    padding: 4rem 2.2rem 1rem 2rem;
+  }
+
+  .message-input {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10rem;
   }
 }
