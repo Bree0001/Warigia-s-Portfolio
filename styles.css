@@ -53,7 +53,6 @@ body {
 }
 
 header {
-  display: flex;
   background: var(--header-bg);
   height: 8vh;
   position: fixed;
@@ -63,25 +62,39 @@ header {
   overflow-x: hidden;
 }
 
-.navbar {
+.desktop-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: var(--white-bg);
   font-family: var(--roboto);
-  width: 100%;
+  margin: 2rem;
 }
 
-.logo {
+.logo-desktop {
   font-size: 2.5rem;
   font-weight: 500;
+  margin-left: 10rem;
+  margin-bottom: 2rem;
 }
 
-.menu-icon {
+.desktop-menu {
   display: flex;
-  flex-direction: column;
-  gap: 3px;
-  right: 20px;
+  justify-content: space-between;
+  gap: 3rem;
+  margin-right: 5rem;
+}
+
+span {
+  font-size: 1.6rem;
+}
+
+.message-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .menu-icon span {
@@ -363,7 +376,7 @@ textarea::placeholder {
   color: #172b4d;
 }
 
-/* mobile */
+/* MOBILE VERSION */
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   header {
@@ -371,8 +384,37 @@ textarea::placeholder {
     padding: 4rem 2.6rem;
   }
 
-  .logo {
-    font-size: 2.2rem;
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-bg);
+    font-family: var(--roboto);
+  }
+
+  .logo-mobile {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-left: 3rem;
+    margin-bottom: 3px;
+
+  }
+
+  .mobile.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lines {
+    display: block;
+    width: 2rem;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 3px;
   }
 
   .illustration {
@@ -463,11 +505,9 @@ textarea::placeholder {
     margin-top: 2rem;
     width: 100%;
     background:
-      linear-gradient(
-        180.45deg,
+      linear-gradient(180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      ),
+        rgba(38, 38, 38, 0.9) 61.94%),
       url(assets/images/card-img.png);
     background-size: cover;
     background-repeat: no-repeat;
