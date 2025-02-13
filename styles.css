@@ -311,12 +311,27 @@ span {
   position: relative;
 }
 
-.about-me-section {
+.illustration2 {
+  position: absolute;
+  top: 10%;
+  right: -38%;
+  width: 70%;
+}
+
+.illustration2 img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.illustration-mobile {
+  display: none;
+}
+
+.about-container {
   background-color: var(--black-bg);
   width: 100%;
   position: relative;
-  display: flex;
-  padding-top: 30%;
 }
 
 .about-me-section h2 {
@@ -324,10 +339,12 @@ span {
   color: var(--primary-text);
   font-size: 7.6rem;
   font-weight: 400;
+  padding-top: 10rem;
+  padding-left: 9rem;
 }
 
 .about-text {
-  padding-left: 8%;
+  padding-left: 9rem;
 }
 
 .about-me-section p {
@@ -353,10 +370,9 @@ span {
 
 .lining {
   width: 80%;
-  height: 1px;
-  background: var(--white-bg);
-  position: absolute;
-  bottom: 0;
+  height: 2px;
+  background: grey;
+  margin: 15rem 9rem;
 }
 
 .languages-container {
@@ -366,6 +382,19 @@ span {
 
 .languages-icons {
   margin-right: 1rem;
+}
+
+.languages h3 {
+  color: var(--white-bg);
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.languages ul li {
+  list-style-type: none;
+  color: var(--white-bg);
+  padding: 1.5rem;
+  font-size: 2rem;
 }
 
 /* Contact Section */
@@ -611,26 +640,42 @@ textarea::placeholder {
     width: 100%;
   }
 
-  .about-me-section {
-    flex-direction: column;
-    align-items: center;
-    height: 80vh;
-  }
+  /*About Me Section*/
 
   .about-me-section h2 {
-    text-align: center;
+    padding-left: 3rem;
+  }
+
+  .about-text {
+    padding-left: 3rem;
+  }
+
+  .lining {
+    margin-top: 25rem;
+    margin-left: 3rem;
+
   }
 
   .illustration2 {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 100%;
+    height: auto;
+    top: 25%;
+    right: -60%;
   }
 
   .illustration2 img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+  }
+
+  .illustration-desktop {
+    display: none;
+  }
+
+  .illustration-mobile {
+    display: block;
   }
 
   .last-section {
@@ -652,19 +697,6 @@ textarea::placeholder {
     text-align: center;
     flex: 1;
     min-width: 200px;
-  }
-
-  .languages h3 {
-    color: var(--white-bg);
-    font-size: 3.2rem;
-    margin-bottom: 1rem;
-  }
-
-  .languages ul li {
-    list-style-type: none;
-    color: var(--white-bg);
-    padding: 1.5rem;
-    font-size: 2rem;
   }
 
   .contact-form {
