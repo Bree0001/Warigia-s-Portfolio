@@ -142,9 +142,9 @@ span {
 .headline-text h1 {
   font-family: var(--crete);
   color: var(--primary-text);
-  margin-top: 8rem;
   font-size: 6rem;
   font-weight: 400;
+  margin-top: 8rem;
 }
 
 .headline-text h2 {
@@ -173,6 +173,7 @@ span {
 }
 
 /* Works Section */
+
 .works-header {
   width: 100%;
   display: flex;
