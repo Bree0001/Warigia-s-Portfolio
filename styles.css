@@ -177,20 +177,22 @@ span {
 .works-header {
   width: 100%;
   display: flex;
+  padding: 10rem 1rem 10rem 10rem;
 }
 
 .works-header h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: var(--crete);
   font-weight: lighter;
   opacity: 0.7;
 }
 
 .heading-line {
-  background-color: var(--black-bg);
-  width: 90%;
+  background-color: gray;
+  width: 70%;
   height: 1px;
-  margin-bottom: 3%;
+  margin-top: 2.3rem;
+  margin-left: 2.5rem;
 }
 
 .cards {
@@ -199,10 +201,15 @@ span {
 
 .card-1 {
   display: flex;
+  padding: 0rem 10rem;
 }
 
 .card-1 img {
-  width: 90%;
+  width: 70%;
+}
+
+.div-info {
+  padding-left: 1rem;
 }
 
 .card-1 h2 {
@@ -210,6 +217,7 @@ span {
   font-size: 3rem;
   font-family: var(--crete);
   font-weight: lighter;
+  padding-left: 1rem;
 }
 
 .card-1 p {
@@ -217,7 +225,23 @@ span {
   line-height: 2.3rem;
   font-size: 1.7rem;
   font-weight: 400;
-  margin-left: 3%;
+  padding-left: 2rem;
+}
+
+.unordered-list {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 2rem;
+  margin-top: 1.3rem;
+}
+
+.unordered-list li {
+  background: #ffffff37;
+  padding: 1rem 1.2rem;
+  border: 0.2px solid black;
+  font-size: 1.6rem;
 }
 
 .card-1-button {
@@ -225,10 +249,10 @@ span {
   color: var(--white-bg);
   font-family: var(--inter);
   font-size: 400;
-  padding: 1.3rem 2rem;
+  padding: 1.5rem 2rem;
   border: none;
-  margin-left: 1rem;
-  margin-bottom: 0;
+  margin-left: 2rem;
+  margin-top: 1rem;
   width: fit-content;
 }
 
@@ -477,6 +501,8 @@ textarea::placeholder {
     height: 4.2rem;
   }
 
+  /*Works About Section*/
+
   .works-about-section {
     padding: 10rem 5% 5rem;
   }
@@ -484,10 +510,14 @@ textarea::placeholder {
   .works-header {
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+    padding: 0;
+
   }
 
   .heading-line {
     background-color: gray;
+    width: 85%;
     height: 1px;
     margin-top: 10%;
   }
@@ -501,28 +531,13 @@ textarea::placeholder {
   .card-1 {
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .card-1 img {
     margin-top: 19%;
     margin-left: 5%;
     width: 90%;
-  }
-
-  .unordered-list {
-    display: flex;
-    list-style: none;
-    gap: 1.2rem;
-    padding-bottom: 1.2rem;
-    padding-left: 1rem;
-    margin-top: 1.3rem;
-  }
-
-  .unordered-list li {
-    background: #ffffff37;
-    padding: 1rem 1.2rem;
-    border: 0.2px solid black;
-    font-size: 1.6rem;
   }
 
   .card-2 {
