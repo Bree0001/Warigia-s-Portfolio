@@ -22,8 +22,6 @@
   <!-- - [Run tests](#run-tests)
   - [Deployment](#deployment) -->
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 <!-- - [❓ FAQ (OPTIONAL)](#faq) -->
@@ -53,26 +51,6 @@
   </ul>
 </details>
 
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- **Homepage showcasing portfolio projects**
-<!-- - **[key_feature_2]**
-- **[key_feature_3]** -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-<!--
-## 🚀 Live Demo <a name="live-demo"></a> -->
-<!--
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://google.com) -->
-
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
@@ -96,12 +74,10 @@ Clone this repository to your desired folder:
   git clone git@github.com:Bree0001/Warigia-s-Portfolio.git
 ```
 
-You can also download this project as a ZIP file by [clicking here](git@github.com:Bree0001/Warigia-s-Portfolio.git).
-
 Get into the cloned repository which should be in your local:
 
 ```
-cd portfolio-example-bree
+cd warigia'a-portfolio
 ```
 
 ### Install
@@ -130,16 +106,6 @@ To run the project, make sure you have the VSCode Liver server extension install
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
@@ -152,7 +118,7 @@ If you like this project please give it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my mentors:
+I would like to thank my mentor:
 
 - GitHub: [Shaquille Ndunda](https://github.com/shaqdeff)
 
