@@ -365,6 +365,7 @@ span {
 }
 
 /*Many Cards*/
+
 .many-divs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -388,7 +389,7 @@ span {
   display: flex;
   flex-direction: column;
   color: var(--white-bg);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.9s ease;
 }
 
 .card-info {
@@ -568,7 +569,7 @@ form input {
 }
 
 .input-section {
-  width: 60%;
+  width: 100%;
 }
 
 .input-section input::placeholder {
@@ -623,6 +624,11 @@ textarea::placeholder {
 
 .footer-icons img {
   color: #172b4d;
+}
+
+#buttons:hover {
+  background-color: #fff5e1;
+  color: var(--primary-text);
 }
 
 /* MOBILE VERSION */
@@ -878,12 +884,14 @@ textarea::placeholder {
   }
 
   .contact-form {
+    width: 90%;
     flex-direction: column;
     padding: 3rem;
   }
 
   .contact-info {
     text-align: center;
+    width: 90%;
   }
 
   .contact-form p {
