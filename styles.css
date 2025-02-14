@@ -103,7 +103,7 @@ span {
   background: var(--white-bg);
 }
 
-/*Hero Section*/
+/* Hero Section */
 
 .headline-container {
   display: flex;
@@ -176,6 +176,21 @@ span {
   top: 40%;
 }
 
+.hover-overlay {
+  background-color: var(--white-bg);
+  margin-top: 6rem;
+  width: 80%;
+  height: 80%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.9s ease, visibility 0.5s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .headline-container:hover .text-icons-container,
 .headline-container:hover .illustration {
   filter: blur(25px);
@@ -192,21 +207,6 @@ span {
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-.hover-overlay {
-  background-color: var(--white-bg);
-  margin-top: 6rem;
-  width: 80%;
-  height: 80%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.9s ease, visibility 0.5s ease;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 .h2-desktop-overlay {
@@ -281,7 +281,6 @@ span {
   height: 1.6rem;
 }
 
-
 /* Works Section */
 
 .works-header {
@@ -307,7 +306,7 @@ span {
 
 .card-1 {
   display: flex;
-  padding: 0rem 10rem;
+  padding: 0 10rem;
 }
 
 .card-1 img {
@@ -333,7 +332,6 @@ span {
   font-weight: 400;
   margin-left: 1rem;
   margin-top: 3rem;
-
 }
 
 .unordered-list {
@@ -364,7 +362,7 @@ span {
   width: fit-content;
 }
 
-/*Many Cards*/
+/* Many Cards */
 
 .many-divs {
   display: grid;
@@ -375,7 +373,6 @@ span {
 
 .card-2 {
   position: relative;
-  width: 100%;
   display: flex;
   margin-top: 2rem;
   width: 100%;
@@ -386,7 +383,6 @@ span {
     url(assets/images/card-img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
   color: var(--white-bg);
   transition: all 0.9s ease;
@@ -437,6 +433,33 @@ span {
   background-size: cover;
 }
 
+.about-me-section h2 {
+  font-family: var(--crete);
+  color: var(--primary-text);
+  font-size: 7.6rem;
+  font-weight: 400;
+  padding-top: 10rem;
+  padding-left: 9rem;
+}
+
+.about-me-section p {
+  font-family: var(--inter);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white-bg);
+  width: 80%;
+  margin-top: 2rem;
+  line-height: 2.4rem;
+}
+
+.contact-form p {
+  font-family: var(--inter);
+  font-size: 3.2rem;
+  color: #172b4d;
+  line-height: 4rem;
+  font-weight: 700;
+}
+
 .card-2:hover .card-info,
 .card-2:hover h2,
 .card-2:hover p,
@@ -446,14 +469,9 @@ span {
 
 .card-2:hover .big-button {
   display: block;
-
 }
 
 /* About Me Section */
-
-.about-container {
-  position: relative;
-}
 
 .illustration2 {
   position: absolute;
@@ -478,27 +496,8 @@ span {
   position: relative;
 }
 
-.about-me-section h2 {
-  font-family: var(--crete);
-  color: var(--primary-text);
-  font-size: 7.6rem;
-  font-weight: 400;
-  padding-top: 10rem;
-  padding-left: 9rem;
-}
-
 .about-text {
   padding-left: 9rem;
-}
-
-.about-me-section p {
-  font-family: var(--inter);
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: var(--white-bg);
-  width: 80%;
-  margin-top: 2rem;
-  line-height: 2.4rem;
 }
 
 .about-button {
@@ -553,14 +552,6 @@ span {
 
 .contact-info {
   width: 40%;
-}
-
-.contact-form p {
-  font-family: var(--inter);
-  font-size: 3.2rem;
-  color: #172b4d;
-  line-height: 4rem;
-  font-weight: 700;
 }
 
 form input {
@@ -655,7 +646,6 @@ textarea::placeholder {
     font-weight: 500;
     margin-left: 3rem;
     margin-bottom: 3px;
-
   }
 
   .mobile.menu {
@@ -672,7 +662,7 @@ textarea::placeholder {
     margin-bottom: 3px;
   }
 
-  /*Hero Section*/
+  /* Hero Section */
 
   .illustration {
     bottom: -27%;
@@ -682,7 +672,7 @@ textarea::placeholder {
 
   .text-icons-container {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
 
   .headline-text {
@@ -711,7 +701,7 @@ textarea::placeholder {
     height: 4.2rem;
   }
 
-  /*Overlay*/
+  /* Overlay */
 
   .h2-desktop-overlay {
     display: none;
@@ -743,7 +733,7 @@ textarea::placeholder {
     padding-left: 1rem;
   }
 
-  /*Works About Section*/
+  /* Works About Section */
 
   .works-about-section {
     padding: 10rem 5% 5rem;
@@ -785,7 +775,7 @@ textarea::placeholder {
     width: 90%;
   }
 
-  /*Many Cards*/
+  /* Many Cards */
 
   .many-divs {
     display: flex;
@@ -824,7 +814,7 @@ textarea::placeholder {
     opacity: 0;
   }
 
-  /*About Me Section*/
+  /* About Me Section */
 
   .about-me-section h2 {
     padding-left: 3rem;
@@ -837,7 +827,6 @@ textarea::placeholder {
   .lining {
     margin-top: 25rem;
     margin-left: 3rem;
-
   }
 
   .illustration2 {
