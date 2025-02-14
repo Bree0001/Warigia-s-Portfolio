@@ -133,6 +133,7 @@ span {
   margin-top: 10%;
   line-height: 1.25;
   gap: 1rem;
+  transition: filter 0.5s ease;
 }
 
 .headline-text {
@@ -171,6 +172,95 @@ span {
   left: 5%;
   top: 40%;
 }
+
+.headline-container:hover .text-icons-container,
+.headline-container:hover .illustration {
+  filter: blur(8px);
+}
+
+.first-overlay-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hover-overlay {
+  background-color: var(--white-bg);
+  margin-top: 10rem;
+  width: 80%;
+  height: 80%;
+}
+
+.hover-overlay h2 {
+  color: var(--black-bg);
+  font-family: var(--crete);
+  font-size: 3rem;
+  margin-left: 3.6rem;
+  font-weight: 400;
+}
+
+.unordered-list-overlay {
+  display: flex;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+.unordered-list-overlay li {
+  background: var(--white-bg);
+  color: var(--black-bg);
+  padding: 1rem 1.2rem;
+  border: 0.1px solid black;
+  font-size: 1.3rem;
+  list-style-type: none;
+}
+
+.overlay-second-div {
+  display: flex;
+  margin: 3.6rem;
+
+}
+
+.overlay-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  width: 40%;
+  padding-left: 3rem;
+}
+
+.overlay-text p {
+  font-family: var(--inter);
+  color: var(--black-bg);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.overlay-buttons {
+  background-color: var(--primary-text);
+  color: var(--white-bg);
+  font-family: var(--inter);
+  padding: 1.3rem 2rem;
+  border: 0;
+  margin-top: 13.8rem;
+  margin-right: 2rem;
+}
+
+.overlay-icon-live {
+  width: 1.5rem;
+  height: auto;
+  color: var(--white-bg);
+}
+
+.overlay-icon-github {
+  width: 2.6rem;
+  height: 1.6rem;
+}
+
 
 /* Works Section */
 
@@ -258,7 +348,6 @@ span {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   padding: 2rem 9rem;
-
 }
 
 .card-2 {
