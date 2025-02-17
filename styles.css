@@ -191,6 +191,8 @@ span {
   z-index: 1;
 }
 
+/*
+
 .headline-container:hover .text-icons-container,
 .headline-container:hover .illustration {
   filter: blur(25px);
@@ -279,7 +281,7 @@ span {
 .overlay-icon-github {
   width: 2.6rem;
   height: 1.6rem;
-}
+} */
 
 /* Works Section */
 
@@ -377,11 +379,9 @@ span {
   margin-top: 2rem;
   width: 100%;
   background:
-    linear-gradient(
-      180.45deg,
+    linear-gradient(180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
+      rgba(38, 38, 38, 0.9) 61.94%),
     url(assets/images/card-img.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -531,8 +531,14 @@ span {
 
 .languages h3 {
   color: var(--white-bg);
-  font-size: 3.2rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  margin-left: 1.5rem;
+}
+
+.languages img {
+  width: 1.5rem;
+  height: auto;
 }
 
 .languages ul li {
@@ -562,7 +568,7 @@ form input {
 }
 
 .input-section {
-  width: 100%;
+  width: 50%;
 }
 
 .input-section input::placeholder {
@@ -789,11 +795,9 @@ textarea::placeholder {
     margin-top: 2rem;
     width: 100%;
     background:
-      linear-gradient(
-        180.45deg,
+      linear-gradient(180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%
-      ),
+        rgba(38, 38, 38, 0.9) 61.94%),
       url(assets/images/card-img.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -893,6 +897,7 @@ textarea::placeholder {
 
   .input-section {
     margin-top: 4rem;
+    width: 100%;
   }
 
   .input-section input {
