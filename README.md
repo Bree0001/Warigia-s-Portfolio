@@ -13,7 +13,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    <!-- - [🚀 Live Demo](#live-demo) -->
+    - [🚀 Live Demo](#live-demo) 
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -50,6 +50,10 @@
     <li><a href="/">CSS3</a></li>
   </ul>
 </details>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+To take a look at this project, click this link [https://bree0001.github.io/Warigia-s-Portfolio/](https://bree0001.github.io/Warigia-s-Portfolio/).
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
