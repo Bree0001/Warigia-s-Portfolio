@@ -300,23 +300,31 @@ span {
 
 .heading-line {
   background-color: gray;
-  width: 70%;
+  width: 90%;
   height: 1px;
   margin-top: 2.3rem;
   margin-left: 2.5rem;
 }
 
 .card-1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: start;
+  gap: 2rem;
   padding: 0 10rem;
 }
 
 .card-1 img {
-  width: 40%;
+  width: 100%;
+}
+
+.first-div-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .div-info {
-  width: 30%;
   margin-left: 1rem;
 }
 
@@ -333,7 +341,7 @@ span {
   font-size: 1.7rem;
   font-weight: 400;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .unordered-list {
@@ -341,7 +349,7 @@ span {
   list-style: none;
   gap: 1.2rem;
   padding-bottom: 1.2rem;
-  padding-left: 2rem;
+  padding-left: 1.4rem;
   margin-top: 1.6rem;
 }
 
@@ -370,7 +378,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  padding: 2rem 9rem;
+  padding: 5rem 9rem;
 }
 
 .card-2 {
@@ -380,9 +388,11 @@ span {
   width: 100%;
   height: 100%;
   background:
-    linear-gradient(180.45deg,
+    linear-gradient(
+      180.45deg,
       rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%),
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
     url(assets/images/card-img.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -536,6 +546,7 @@ span {
 .languages-container {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 3rem;
 }
 
 .languages-icons {
@@ -757,7 +768,7 @@ textarea::placeholder {
   /* Works About Section */
 
   .works-about-section {
-    padding: 10rem 5% 5rem;
+    padding: 10rem 2rem;
   }
 
   .works-header {
@@ -774,43 +785,60 @@ textarea::placeholder {
     margin-top: 10%;
   }
 
-  .cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-
   .card-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     padding: 0;
   }
 
   .card-1 img {
-    margin-top: 19%;
-    margin-left: 5%;
-    width: 90%;
+    width: 100%;
+    margin-top: 5rem;
+    height: auto;
+  }
+
+  .card-1 p {
+    margin-left: 2rem;
+  }
+
+  .unordered-list {
+    padding-left: 2rem;
   }
 
   .div-info {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .card-1 button {
+    margin-left: 2rem;
+  }
+
+  .div-info h2 {
+    font-size: 2.2rem;
+    margin-top: 0;
+    padding-left: 2rem;
   }
 
   /* Many Cards */
 
   .many-divs {
+    margin: 0 auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    padding: 0;
   }
 
   .card-2 {
-    margin-top: 2rem;
     width: 100%;
     background:
-      linear-gradient(180.45deg,
+      linear-gradient(
+        180.45deg,
         rgba(38, 38, 38, 0) 0.75%,
-        rgba(38, 38, 38, 0.9) 61.94%),
+        rgba(38, 38, 38, 0.9) 61.94%
+      ),
       url(assets/images/card-img.png);
     background-size: cover;
     background-repeat: no-repeat;
