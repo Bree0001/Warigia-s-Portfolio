@@ -53,7 +53,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-To take a look at this project, click this link [https://bree0001.github.io/Warigia-s-Portfolio/](Click Here).
+To take a look at this project, [Click Here](https://bree0001.github.io/Warigia-s-Portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
